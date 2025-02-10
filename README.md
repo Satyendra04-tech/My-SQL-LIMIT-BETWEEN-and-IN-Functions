@@ -35,6 +35,14 @@ LIMIT 10;
 
 ## BETWEEN  
 ### a. BETWEEN Operator can be used to match a value against a range of value.  
+                value BETWEEN low and high
 ### b. BETWEEN operator is the same as :
                value >= low and value <= high  
                Value between low and high
+### c. We can also combine BETWEEN and NOT operator.  
+                Value NOT BETWEEN low and high  
+#### d. NOT BETWEEN operator is same as :
+                value < low OR  value > high
+                value NOT BETWEEN low and high
+
+
