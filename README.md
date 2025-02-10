@@ -3,7 +3,7 @@
 ## LIMIT Operator
 ### a. LIMIT command allows us to limit the number of rows returned for a query.  
 ### b. It is useful when not wanting to return every single row in a table. 
-### c. LIMIT also become useful in combination with ORDER BY.  
+### c. LIMIT also becomes useful in combination with ORDER BY.  
 ### d. Limit is the last command to be executed.  
 
 * Syntax =  
@@ -58,7 +58,7 @@ WHERE column1 NOT BETWEEN 8 AND 9;
 ```
 ### Examples 
 
-#### Suppose we have a table T2 which has columns named payment_date.  
+#### Suppose we have a table T2 which has column named payment_date.  
 
 1. Get all the payments made between '2007-02-01' and '2007-02-14'.  
 ``` 
