@@ -50,9 +50,20 @@ LIMIT 10;
 * Syntax of BETWEEN operator and NOT BETWEEN operator =
 ```
 SELECT * FROM table1
-WHERE column1 BETWEEN 8 and 9;
+WHERE column1 BETWEEN 8 AND 9;
 ```  
 ```
 SELECT * FROM table1
-WHERE column1 NOT BETWEEN 8 and 9;
+WHERE column1 NOT BETWEEN 8 AND 9;
 ```
+### Examples 
+
+#### Suppose we have a table T2 which has columns named payment_date.  
+
+1. Get all the payments made between '2007-02-01' and '2007-02-14'.  
+``` 
+SELECT * FROM t2
+WHERE payment_date BETWEEN '2007-02-01' AND '2007-02-15';
+```  
+Note = SQL will only consider the dates till 00:00 hrs, so if we give end date as '2007-02-14' it will only consider payments done till 2007-02-14 00:00 hrs and payments done between 2007-02-14 00:01 hrs to 2007-02-14 23:59 hrs will not be considered. So to include the payments made till 2007-02-14 23:59 we will give end date as '2007-02-15'. 
+
