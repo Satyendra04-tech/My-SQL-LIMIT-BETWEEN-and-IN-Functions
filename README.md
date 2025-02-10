@@ -1,10 +1,10 @@
 # Hello all, I am sharing how to use LIMIT, BETWEEN and IN functions in SQL  
 
 ## LIMIT  
-### LIMIT command allows us to limit the number of rows returned for a query.  
-### It is useful when not wanting to return every single row in a table. 
-### LIMIT also become useful in combination with ORDER BY.  
-### Limit is the last command to be executed.  
+### a. LIMIT command allows us to limit the number of rows returned for a query.  
+### b. It is useful when not wanting to return every single row in a table. 
+### c. LIMIT also become useful in combination with ORDER BY.  
+### d. Limit is the last command to be executed.  
 
 * Syntax =  
 ```
@@ -32,3 +32,7 @@ SELECT * FROM t2
 ORDER BY payment_date
 LIMIT 10;
 ```  
+
+## BETWEEN  
+### a. BETWEEN Operator can be used to match a value against a range of value.  
+###
