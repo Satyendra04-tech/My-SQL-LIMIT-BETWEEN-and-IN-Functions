@@ -41,8 +41,18 @@ LIMIT 10;
                Value between low and high
 ### c. We can also combine BETWEEN and NOT operator.  
                 Value NOT BETWEEN low and high  
-#### d. NOT BETWEEN operator is same as :
+### d. NOT BETWEEN operator is same as :
                 value < low OR  value > high
                 value NOT BETWEEN low and high
 
+### e. BETWEEN can also be used with dates. But we need to format dates in ISO 8601 standard format which is 'YYYY-MM-DD'.
 
+* Syntax of BETWEEN operator and NOT BETWEEN operator =
+```
+SELECT * FROM table1
+WHERE column1 BETWEEN 8 and 9;
+```  
+```
+SELECT * FROM table1
+WHERE column1 NOT BETWEEN 8 and 9;
+```
