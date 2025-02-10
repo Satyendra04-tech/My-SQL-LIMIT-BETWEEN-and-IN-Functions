@@ -1,6 +1,6 @@
 # Hello all, I am sharing how to use LIMIT, BETWEEN and IN functions in SQL  
 
-## LIMIT  
+## LIMIT Operator
 ### a. LIMIT command allows us to limit the number of rows returned for a query.  
 ### b. It is useful when not wanting to return every single row in a table. 
 ### c. LIMIT also become useful in combination with ORDER BY.  
@@ -33,7 +33,7 @@ ORDER BY payment_date
 LIMIT 10;
 ```  
 
-## BETWEEN  
+## BETWEEN Operator 
 ### a. BETWEEN Operator can be used to match a value against a range of value.  
                 value BETWEEN low and high
 ### b. BETWEEN operator is the same as :
@@ -67,7 +67,7 @@ WHERE payment_date BETWEEN '2007-02-01' AND '2007-02-15';
 ```  
 Note = SQL will only consider the dates till 00:00 hrs, so if we give end date as '2007-02-14' it will only consider payments done till 2007-02-14 00:00 hrs and payments done between 2007-02-14 00:01 hrs to 2007-02-14 23:59 hrs will not be considered. So to include the payments made till 2007-02-14 23:59 we will give end date as '2007-02-15'.  
 
-## IN  
+## IN Operator
 ### a. In certain cases we want to check for multiple possible value options, for example if a user's name shows up IN a list of known users.  
 ### b. We can use IN operator that creates a condition that checks if a value is included in a list of multiple options.  
 
