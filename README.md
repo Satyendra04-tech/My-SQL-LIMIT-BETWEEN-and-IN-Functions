@@ -65,5 +65,33 @@ WHERE column1 NOT BETWEEN 8 AND 9;
 SELECT * FROM t2
 WHERE payment_date BETWEEN '2007-02-01' AND '2007-02-15';
 ```  
-Note = SQL will only consider the dates till 00:00 hrs, so if we give end date as '2007-02-14' it will only consider payments done till 2007-02-14 00:00 hrs and payments done between 2007-02-14 00:01 hrs to 2007-02-14 23:59 hrs will not be considered. So to include the payments made till 2007-02-14 23:59 we will give end date as '2007-02-15'. 
+Note = SQL will only consider the dates till 00:00 hrs, so if we give end date as '2007-02-14' it will only consider payments done till 2007-02-14 00:00 hrs and payments done between 2007-02-14 00:01 hrs to 2007-02-14 23:59 hrs will not be considered. So to include the payments made till 2007-02-14 23:59 we will give end date as '2007-02-15'.  
+
+## IN  
+### a. In certain cases we want to check for multiple possible value options, for example if a user's name shows up IN a list of known users.  
+### b. We can use IN operator that creates a condition that checks if a value is included in a list of multiple options.  
+
+* Syntax =  
+```
+SELECT column1 FROM table1
+WHERE color IN ('red', 'blue')
+```  
+This code will print any values which will have red or blue in color column.  
+
+```
+SELECT color FROM table1
+WHERE color NOT IN ('red', 'blue')
+``` 
+This code will print any values which will not have red or blue in color column.  
+
+```
+SELECT COUNT (*) FROM table1
+WHERE amount NOT IN (0.99, 1.98, 1.99)
+```
+This code will give count of rows whose amount is in 0.99 or 1.98 or 1.99.  
+
+## That's it for the LIMIT, BETWEEN and IN functions, see you in the next chapter !!
+
+
+
 
